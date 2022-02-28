@@ -1,7 +1,7 @@
 # Init Project(page)
 
 1. clone template
-   `degit MaxChou1205/css-practice/templat ./pages/<project name>`
+   `degit MaxChou1205/css-practice/template ./pages/<project name>`
 
 2. init project
    `yarn`
