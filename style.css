@@ -1,5 +1,5 @@
 #app {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +13,14 @@
 #app > div:not(:last-child)::after {
   content: "|";
   margin: 0 20px;
+}
+
+#menu {
+  list-style: none;
+}
+
+#menu li {
+  margin-bottom: 20px;
 }
 
 .go_back {
