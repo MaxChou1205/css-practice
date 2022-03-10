@@ -20,7 +20,8 @@ let folders = [
   "list-hover-effects",
   "animated-menu-toggle",
   "custom-checkbox",
-  "animated-website"
+  "animated-website",
+  "switch"
 ];
 
 folders.forEach(folderName => {
