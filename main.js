@@ -21,7 +21,8 @@ let folders = [
   "animated-menu-toggle",
   "custom-checkbox",
   "animated-website",
-  "switch"
+  "switch",
+  "text-hover-effects"
 ];
 
 folders.forEach(folderName => {
