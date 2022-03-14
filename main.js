@@ -22,7 +22,9 @@ let folders = [
   "custom-checkbox",
   "animated-website",
   "switch",
-  "text-hover-effects"
+  "text-hover-effects",
+  "sidebar-menu",
+  "responsive-navbar"
 ];
 
 folders.forEach(folderName => {
