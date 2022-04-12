@@ -24,7 +24,8 @@ let folders = [
   "switch",
   "text-hover-effects",
   "sidebar-menu",
-  "responsive-navbar"
+  "responsive-navbar",
+  "progress-bar"
 ];
 
 folders.forEach(folderName => {
