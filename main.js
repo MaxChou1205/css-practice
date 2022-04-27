@@ -25,7 +25,8 @@ let folders = [
   "text-hover-effects",
   "sidebar-menu",
   "responsive-navbar",
-  "progress-bar"
+  "progress-bar",
+  "trillo(flexbox-project)"
 ];
 
 folders.forEach(folderName => {
