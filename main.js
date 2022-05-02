@@ -26,7 +26,7 @@ let folders = [
   "sidebar-menu",
   "responsive-navbar",
   "progress-bar",
-  "trillo(flexbox-project)"
+  "trillo-flexbox"
 ];
 
 folders.forEach(folderName => {
