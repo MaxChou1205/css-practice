@@ -26,7 +26,8 @@ let folders = [
   "sidebar-menu",
   "responsive-navbar",
   "progress-bar",
-  "trillo-flexbox"
+  "trillo-flexbox",
+  "auto-typing"
 ];
 
 folders.forEach(folderName => {
