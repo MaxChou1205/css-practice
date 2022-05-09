@@ -27,7 +27,8 @@ let folders = [
   "responsive-navbar",
   "progress-bar",
   "trillo-flexbox",
-  "auto-typing"
+  "auto-typing",
+  "tours-website"
 ];
 
 folders.forEach(folderName => {
