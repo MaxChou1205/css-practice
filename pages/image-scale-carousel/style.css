@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 200vh;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: orange;
+}
+
+.kv_list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+  background-color: gray;
+}
+
+.scroll .kv_list {
+  width: 1200px;
+  height: 300px;
+}
+
+.kv_item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150% auto;
+  opacity: 0;
+  animation: kvAnimate linear infinite;
+}
+
+.img_1 {
+  background-image: url("https://picsum.photos/id/1/1920/1080");
+  animation-duration: 10s;
+  animation-delay: 0s;
+}
+
+.img_2 {
+  background-image: url("https://picsum.photos/id/2/1920/1080");
+  animation-duration: 10s;
+  animation-delay: 5s;
+}
+
+@keyframes kvAnimate {
+  0% {
+    opacity: 0;
+    background-size: 150% auto;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+    background-size: 120% auto;
+  }
+}

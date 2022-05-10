@@ -28,7 +28,8 @@ let folders = [
   "progress-bar",
   "trillo-flexbox",
   "auto-typing",
-  "tours-website"
+  "tours-website",
+  "image-scale-carousel"
 ];
 
 folders.forEach(folderName => {
