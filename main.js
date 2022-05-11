@@ -29,7 +29,8 @@ let folders = [
   "trillo-flexbox",
   "auto-typing",
   "tours-website",
-  "image-scale-carousel"
+  "image-scale-carousel",
+  "scroll-scale"
 ];
 
 folders.forEach(folderName => {
