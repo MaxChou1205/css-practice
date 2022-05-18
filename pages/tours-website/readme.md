@@ -15,3 +15,7 @@
 # Effect Remark
 - 翻轉效果 `card__side`
 - 字體漸層與skew `heading-secondary`
+
+# Reference
+- https://easings.net/
+- https://cubic-bezier.com/
