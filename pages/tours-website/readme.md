@@ -11,6 +11,8 @@
 - 多行(斷行)時，每一行維持原本單行的所有樣式：`box-decoration-break`
 - 物化效果等濾淨：`filter`
 - 置換元素的內容填入的位置及大小：`object-fit` / `object-position`
+- 設定文字為多欄：`column-count`
+- 瀏覽器為英文時英文字換行自動補上`-`：`hyphens`
 
 # Effect Remark
 - 翻轉效果 `card__side`
