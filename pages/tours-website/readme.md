@@ -18,6 +18,10 @@
 - 翻轉效果 `card__side`
 - 字體漸層與skew `heading-secondary`
 
+# Resopnsive Image
+1. `picture` 標籤內塞入 `source` 與 `img` 標籤，`source` 內指定 `media` 屬性，預設會先顯示 `source` 圖片，在超過 `media` 範圍後會自動切換為 `img` 的圖片
+
 # Reference
 - https://easings.net/
 - https://cubic-bezier.com/
+- https://cythilya.github.io/2018/08/24/responsive-images/
