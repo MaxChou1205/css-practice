@@ -13,6 +13,7 @@
 - 置換元素的內容填入的位置及大小：`object-fit` / `object-position`
 - 設定文字為多欄：`column-count`
 - 瀏覽器為英文時英文字換行自動補上`-`：`hyphens`
+- 毛玻璃、對比、明暗度等調整：`backdrop-filter`
 
 # Effect Remark
 
