@@ -30,7 +30,8 @@ let folders = [
   "auto-typing",
   "tours-website",
   "image-scale-carousel",
-  "scroll-scale"
+  "scroll-scale",
+  "animated-navigation-menu"
 ];
 
 folders.forEach(folderName => {
