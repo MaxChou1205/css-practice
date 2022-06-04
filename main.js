@@ -31,7 +31,9 @@ let folders = [
   "tours-website",
   "image-scale-carousel",
   "scroll-scale",
-  "animated-navigation-menu"
+  "animated-navigation-menu",
+  "facebook-ui",
+  "tailwind-pricing-page"
 ];
 
 folders.forEach(folderName => {
