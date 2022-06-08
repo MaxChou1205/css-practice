@@ -61,19 +61,136 @@
       </div>
 
       <!-- header right -->
-      <div class="flex items-center">
-        <button class="popover-btn">
+      <div class="flex items-center relative">
+        <button class="popover-btn" id="btnPlus">
           <img src="https://bruce-fe-fb.web.app/image/plus.svg" />
         </button>
-        <button class="popover-btn">
+        <button class="popover-btn" id="btnMessenger">
           <img src="https://bruce-fe-fb.web.app/image/messenger.svg" />
         </button>
-        <button class="popover-btn">
+        <button class="popover-btn" id="btnNotify">
           <img src="https://bruce-fe-fb.web.app/image/bell.svg" />
         </button>
-        <button class="popover-btn">
+        <button class="popover-btn" id="btnMore">
           <img src="https://bruce-fe-fb.web.app/image/down.svg" />
         </button>
+
+        <div class="popover-panel z-10 opacity-0">
+          <p class="text-white text-lg">建立</p>
+          <div
+            class="p-2 flex items-center rounded-lg cursor-pointer hover:bg-fb-active"
+          >
+            <div class="p-2 mr-2 bg-fb-input rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke="white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                />
+              </svg>
+            </div>
+            <div class="flex-1">
+              <p class="text-white">貼文</p>
+              <p class="text-sm text-gray-400">在動態消息分享貼文</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="popover-panel z-10 opacity-0">
+          <p class="text-white text-lg mb-2">Messenger</p>
+          <div class="px-4 mb-6 flex items-center bg-fb-input rounded-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-[18px] h-[18px] mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#9ba3af"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+            <input
+              type="text"
+              class="w-full bg-transparent text-white border-0 focus:ring-0 placeholder:text-white"
+              placeholder="搜尋 Messenger"
+            />
+          </div>
+          <div class="flex items-center">
+            <div class="w-[50px] h-[50px] rounded-full overflow-hidden mr-4">
+              <img
+                src="https://bruce-fe-fb.web.app/image/avator.png"
+                class="w-full object-cover"
+              />
+            </div>
+            <div class="flex-1">
+              <p class="text-white">Max</p>
+              <p class="text-sm text-gray-400">Lorem, ipsum dolor. 1 分鐘前</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="popover-panel z-10 opacity-0">
+          <p class="text-white text-lg mb-2">通知</p>
+          <div class="flex items-center">
+            <div class="w-[50px] h-[50px] rounded-full overflow-hidden mr-4">
+              <img
+                src="https://bruce-fe-fb.web.app/image/avator.png"
+                class="w-full object-cover"
+              />
+            </div>
+            <div class="flex-1">
+              <p class="text-white">Max 發佈了一則新訊息！</p>
+              <p class="text-sm text-fb">1 分鐘前</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="popover-panel z-10 opacity-0">
+          <div class="flex items-center mb-4">
+            <div class="w-[50px] h-[50px] rounded-full overflow-hidden mr-4">
+              <img
+                src="https://bruce-fe-fb.web.app/image/avator.png"
+                class="w-full object-cover"
+              />
+            </div>
+            <div class="flex-1">
+              <p class="text-white">Max</p>
+              <p class="text-sm text-gray-400">查看你的個人檔案</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="p-2 mr-3 rounded-full bg-fb-popover">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                stroke="white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                />
+              </svg>
+            </div>
+            <p class="flex-1 text-white cursor-pointer">登出</p>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -89,7 +206,7 @@
       </div>
 
       <div
-        class="hidden sticky top-[72px] max-w-[360px] w-full h-full lg:block"
+        class="hidden sticky top-[72px] max-w-[360px] w-full h-full lg:block -z-10"
       >
         <p class="w-full bg-green-300">右側</p>
       </div>
