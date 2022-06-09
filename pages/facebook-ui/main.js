@@ -11,6 +11,7 @@ window.addEventListener("click", e => {
   panels.forEach(p => {
     p.classList.remove("opacity-1");
     p.classList.add("opacity-0");
+    p.classList.add("invisible");
   });
 });
 
@@ -20,10 +21,12 @@ const openPanel = (index, e) => {
   panels.forEach((p, idx) => {
     if (idx === index) {
       p.classList.remove("opacity-0");
+      p.classList.remove("invisible");
       p.classList.add("opacity-1");
     } else if (p.classList.contains("opacity-1")) {
       p.classList.remove("opacity-1");
       p.classList.add("opacity-0");
+      p.classList.add("invisible");
     }
   });
 };
@@ -101,3 +104,12 @@ items.forEach(item => {
 });
 
 leftSide.innerHTML = leftsideStr;
+
+const rightSide = document.querySelector("#rightSide");
+const rightSideItem = document.querySelector("#rightSideItem");
+
+for (let i = 0; i < 10; i++) {
+  let clone = rightSideItem.cloneNode(true);
+  clone.id = "rightSideItem" + i;
+  rightSide.appendChild(clone);
+}

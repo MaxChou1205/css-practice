@@ -9,7 +9,7 @@
   </head>
   <body class="bg-fb-bg">
     <header
-      class="w-full h-[56px] bg-fb-header fixed top-0 left-0 flex justify-between items-center px-4"
+      class="w-full h-[56px] bg-fb-header fixed top-0 left-0 flex justify-between items-center px-4 z-20"
     >
       <!-- header left -->
       <div class="flex items-center">
@@ -75,7 +75,7 @@
           <img src="https://bruce-fe-fb.web.app/image/down.svg" />
         </button>
 
-        <div class="popover-panel z-10 opacity-0">
+        <div class="popover-panel opacity-0 invisible">
           <p class="text-white text-lg">建立</p>
           <div
             class="p-2 flex items-center rounded-lg cursor-pointer hover:bg-fb-active"
@@ -104,7 +104,7 @@
           </div>
         </div>
 
-        <div class="popover-panel z-10 opacity-0">
+        <div class="popover-panel opacity-0 invisible">
           <p class="text-white text-lg mb-2">Messenger</p>
           <div class="px-4 mb-6 flex items-center bg-fb-input rounded-full">
             <svg
@@ -141,7 +141,7 @@
           </div>
         </div>
 
-        <div class="popover-panel z-10 opacity-0">
+        <div class="popover-panel opacity-0 invisible">
           <p class="text-white text-lg mb-2">通知</p>
           <div class="flex items-center">
             <div class="w-[50px] h-[50px] rounded-full overflow-hidden mr-4">
@@ -157,7 +157,7 @@
           </div>
         </div>
 
-        <div class="popover-panel z-10 opacity-0">
+        <div class="popover-panel opacity-0 invisible">
           <div class="flex items-center mb-4">
             <div class="w-[50px] h-[50px] rounded-full overflow-hidden mr-4">
               <img
@@ -208,9 +208,22 @@
 
       <!-- right side -->
       <div
-        class="hidden sticky top-[72px] max-w-[360px] w-full h-full lg:block -z-10"
+        id="rightSide"
+        class="hidden sticky top-[72px] max-w-[360px] px-2 w-full h-full lg:block"
       >
-        <p class="w-full bg-green-300">右側</p>
+        <h1 class="text-gray-400 text-lg font-bold">聯絡人</h1>
+        <div
+          id="rightSideItem"
+          class="flex items-center p-2 rounded-lg cursor-pointer relative hover:bg-fb-active"
+        >
+          <div class="w-8 h-8 mr-4 rounded-full overflow-hidden relative">
+            <img src="https://bruce-fe-fb.web.app/image/avator.png" />
+          </div>
+          <span
+            class="absolute top-8 left-8 w-2 h-2 rounded-full bg-green-400 ring-black ring"
+          ></span>
+          <div class="text-white">Max</div>
+        </div>
       </div>
     </main>
 
