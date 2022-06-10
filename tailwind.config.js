@@ -16,6 +16,10 @@ module.exports = {
         "fb-active": "#323436",
         "fb-card": "#242526",
         fb: "#2e89ff"
+      },
+      backgroundImage: {
+        "fb-story":
+          "linear-gradient(to bottom, rgba(0,0,0,0.3), transparent), url('https://fakeimg.pl/325x577/')"
       }
     }
   },

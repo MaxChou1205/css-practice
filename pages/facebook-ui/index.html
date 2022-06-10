@@ -203,7 +203,64 @@
 
       <!-- wall -->
       <div class="max-w-[744px] w-full mx-auto">
-        <p class="w-full bg-white">動態牆</p>
+        <div class="relative">
+          <div id="storyList" class="flex overflow-x-auto no-scrollbar">
+            <div class="flex-1 px-1 min-w-[120px] cursor-pointer">
+              <div class="h-full flex flex-col">
+                <div class="h-full overflow-hidden">
+                  <img
+                    class="object-cover h-full duration-300 hover:scale-105"
+                    src="https://bruce-fe-fb.web.app/image/avator.png"
+                  />
+                </div>
+                <div class="bg-fb-card relative px-2 pt-6 pb-2">
+                  <button
+                    class="w-8 h-8 p-2 absolute -top-3 left-1/2 -translate-x-1/2 bg-fb rounded-full ring ring-fb-card focus:outline-none"
+                  >
+                    <img src="https://bruce-fe-fb.web.app/image/plus.svg" />
+                  </button>
+                  <p class="text-white text-center">建立現實動態</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              id="storyItem"
+              class="flex-1 px-1 min-w-[120px] cursor-pointer relative overflow-hidden duration-300"
+            >
+              <div
+                class="w-8 h-8 absolute left-4 top-4 flex justify-center items-center rounded-full bg-fb-card ring-4 ring-fb z-10"
+              >
+                <p class="text-white">M</p>
+              </div>
+              <div
+                class="h-full w-full bg-fb-story bg-cover bg-center duration-300 group hover:scale-105"
+              >
+                <div
+                  class="h-full w-full bg-black/20 hidden group-hover:block"
+                ></div>
+              </div>
+
+              <!-- <div
+                class="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-black/30 to-transparent"
+              ></div> -->
+              <!-- <img
+                class="w-full h-full duration-500 hover:scale-105"
+                src="https://fakeimg.pl/325x577/"
+              /> -->
+              <p class="absolute bottom-2 left-2 text-white text-xl">Max</p>
+            </div>
+          </div>
+
+          <button
+            class="absolute -right-3 top-[calc(50%-22.5px)] z-10 popover-btn w-[45px] h-[45px]"
+          >
+            <img
+              class="w-full h-full"
+              src="https://bruce-fe-fb.web.app/image/right-arrow.svg"
+            />
+          </button>
+        </div>
       </div>
 
       <!-- right side -->

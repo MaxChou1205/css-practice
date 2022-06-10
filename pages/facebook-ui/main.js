@@ -105,6 +105,7 @@ items.forEach(item => {
 
 leftSide.innerHTML = leftsideStr;
 
+// 右側選單
 const rightSide = document.querySelector("#rightSide");
 const rightSideItem = document.querySelector("#rightSideItem");
 
@@ -112,4 +113,13 @@ for (let i = 0; i < 10; i++) {
   let clone = rightSideItem.cloneNode(true);
   clone.id = "rightSideItem" + i;
   rightSide.appendChild(clone);
+}
+
+// 限時動態
+const storyList = document.querySelector("#storyList");
+const storyItem = document.querySelector("#storyItem");
+
+for (let i = 0; i < 6; i++) {
+  let clone = storyItem.cloneNode(true);
+  storyList.appendChild(clone);
 }

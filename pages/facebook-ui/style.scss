@@ -14,3 +14,11 @@
     @apply w-[300px] p-4 bg-fb-header rounded-lg shadow-lg absolute right-0 top-12 border duration-200 border-fb-input lg:w-[360px];
   }
 }
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
