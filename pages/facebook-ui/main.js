@@ -123,3 +123,21 @@ for (let i = 0; i < 6; i++) {
   let clone = storyItem.cloneNode(true);
   storyList.appendChild(clone);
 }
+
+// live
+const swiperWrapper = document.querySelector(".swiper-wrapper");
+const swiperSlide = document.querySelector(".swiper-slide");
+
+for (let i = 0; i < 16; i++) {
+  let clone = swiperSlide.cloneNode(true);
+  swiperWrapper.appendChild(clone);
+}
+
+new Swiper("#fbLive", {
+  loop: false,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  slidesPerView: 8
+});

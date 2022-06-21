@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="../../style.css" />
     <title>Facebook UI</title>
   </head>
@@ -263,7 +267,7 @@
         </div>
 
         <!-- post -->
-        <div class="rounded-lg mt-4 px-4 py-3 bg-fb-card">
+        <div class="card">
           <div class="flex items-center">
             <div class="w-8 mr-4 rounded-full overflow-hidden">
               <img src="https://bruce-fe-fb.web.app/image/avator.png" />
@@ -301,6 +305,40 @@
             </button>
           </div>
         </div>
+
+        <!--  -->
+        <div id="fbLive" class="swiper card">
+          <!-- <div class="swiper-container"> -->
+          <div class="swiper-wrapper flex items-center">
+            <div class="swipe-slide">
+              <button
+                class="flex items-center py-2 px-4 mr-4 h-10 w-[136px] rounded-full ring-2 ring-gray-600 text-fb focus:outline-none"
+              >
+                <div class="w-6 mr-2">
+                  <img
+                    src="https://bruce-fe-fb.web.app/image/video.svg"
+                    class="w-full"
+                  />
+                </div>
+                <span>建立包廂</span>
+              </button>
+            </div>
+            <div class="swiper-slide relative cursor-pointer w-[55px]">
+              <div
+                class="w-8 h-full mr-4 rounded-full overflow-hidden relative"
+              >
+                <img src="https://bruce-fe-fb.web.app/image/avator.png" />
+              </div>
+              <span
+                class="absolute bottom-0 right-4 w-2 h-2 rounded-full bg-green-400 ring-black ring"
+              ></span>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <!-- </div> -->
       </div>
 
       <!-- right side -->
@@ -324,6 +362,7 @@
       </div>
     </main>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="module" src="../../back.js"></script>
     <script type="module" src="./main.js"></script>
   </body>
