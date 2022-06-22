@@ -141,3 +141,12 @@ new Swiper("#fbLive", {
   },
   slidesPerView: 8
 });
+
+// 貼文
+const mainContent = document.querySelector("#mainContent");
+const posts = document.querySelector("#postLoaing");
+
+for (let i = 0; i < 2; i++) {
+  let clone = posts.cloneNode(true);
+  mainContent.appendChild(clone);
+}
