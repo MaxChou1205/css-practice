@@ -33,7 +33,8 @@ let folders = [
   "scroll-scale",
   "animated-navigation-menu",
   "facebook-ui",
-  "tailwind-pricing-page"
+  "tailwind-pricing-page",
+  "toast-notification"
 ];
 
 folders.forEach(folderName => {
