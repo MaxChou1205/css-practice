@@ -34,7 +34,8 @@ let folders = [
   "animated-navigation-menu",
   "facebook-ui",
   "tailwind-pricing-page",
-  "toast-notification"
+  "toast-notification",
+  "form-input-wave"
 ];
 
 folders.forEach(folderName => {
