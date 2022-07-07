@@ -36,7 +36,8 @@ let folders = [
   "tailwind-pricing-page",
   "toast-notification",
   "form-input-wave",
-  "scroll-animation"
+  "scroll-animation",
+  "rotating-navigation-animation"
 ];
 
 folders.forEach(folderName => {
