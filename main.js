@@ -37,7 +37,8 @@ let folders = [
   "toast-notification",
   "form-input-wave",
   "scroll-animation",
-  "rotating-navigation-animation"
+  "rotating-navigation-animation",
+  "expanding-cards"
 ];
 
 folders.forEach(folderName => {
