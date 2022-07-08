@@ -38,7 +38,8 @@ let folders = [
   "form-input-wave",
   "scroll-animation",
   "rotating-navigation-animation",
-  "expanding-cards"
+  "expanding-cards",
+  "gradient-clock"
 ];
 
 folders.forEach(folderName => {
