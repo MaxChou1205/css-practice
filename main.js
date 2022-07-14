@@ -40,7 +40,8 @@ let folders = [
   "rotating-navigation-animation",
   "expanding-cards",
   "gradient-clock",
-  "galaxy-animate"
+  "galaxy-animate",
+  "3d-boxes-background"
 ];
 
 folders.forEach(folderName => {
