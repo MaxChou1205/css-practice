@@ -41,7 +41,8 @@ let folders = [
   "expanding-cards",
   "gradient-clock",
   "galaxy-animate",
-  "3d-boxes-background"
+  "3d-boxes-background",
+  "netflix-mobile-navigation"
 ];
 
 folders.forEach(folderName => {
