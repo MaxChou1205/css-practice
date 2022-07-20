@@ -42,7 +42,8 @@ let folders = [
   "gradient-clock",
   "galaxy-animate",
   "3d-boxes-background",
-  "netflix-mobile-navigation"
+  "netflix-mobile-navigation",
+  "button-ripple-effect"
 ];
 
 folders.forEach(folderName => {
