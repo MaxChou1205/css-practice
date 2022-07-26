@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+div {
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.one {
+  color: #54b3d6;
+  padding: 0.5rem 0;
+  transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.one:hover {
+  box-shadow: inset 300px 0 0 0 #54b3d6;
+  color: white;
+}
+
+.two {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+.two::before,
+.two::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.two::before {
+  background-color: #54b3d6;
+  height: 2px;
+  bottom: 0;
+  /* transform-origin: 100% 50%; */
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.two::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  /* transform-origin: 100% 50%; */
+  transform: translateX(200%);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #54b3d6;
+}
+.two:hover::before {
+  /* transform-origin: 0% 50%; */
+  transform: scaleX(1);
+}
+.two:hover::after {
+  transform: translateX(0);
+}
+.two span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.two:hover span {
+  transform: translateX(-200%);
+}
+
+.three {
+  position: relative;
+  color: #000;
+}
+.three::before {
+  content: "";
+  position: absolute;
+  background-color: #54b3d6;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+}
+.three:hover::before {
+  height: 100%;
+}
+
+.four {
+  position: relative;
+  color: #18272f;
+  padding: 0.25rem 0;
+}
+.four::before {
+  content: "";
+  position: absolute;
+  background-color: #18272f;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+.four:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
