@@ -113,3 +113,71 @@ a {
   transform-origin: left;
   transform: scaleX(1);
 }
+
+.five {
+  position: relative;
+  background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.five::before {
+  content: "";
+  background-color: #54b3d6;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 4px;
+  width: 0;
+  transition: all 0.3s ease-in-out;
+}
+.five:hover {
+  background-position: 0;
+}
+.five:hover::before {
+  width: 100%;
+}
+
+.six {
+  background: linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.3s ease-in-out;
+}
+.six:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+.seven {
+  position: relative;
+}
+.seven::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #54b3d6;
+  border-radius: 4px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.seven:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
